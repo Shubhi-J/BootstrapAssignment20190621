@@ -1,3 +1,11 @@
+/* align carousel below header */
+.carousel {
+    margin-top: 70px;
+}
+/* for responsive feature images */
+.features img {
+    width: 100%!important;
+}
 /* Set background color of features section */
 .features {
     background-color: #e3e3e3;
@@ -13,7 +21,7 @@ footer {
     color: #fff;
 }
 /* Set size of logo */
-.img-fluid {
+.navbar-brand {
     width:80px;
     height:60px;
 }
@@ -33,15 +41,17 @@ footer {
 }
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
+   /* align map in mobile view */
+    .mapHeading {
+        color: blue!important;
+        margin:0 0 50px 0!important;
+    }
     /* Set height of carousel images for small devices */
     .carousel-inner img {
-        height: 400px;
+        height: 300px;
     }
     /* align features content */
-    .features img,p,h3{
-        margin-left: 0!important;
-    }
   } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -50,10 +60,6 @@ footer {
     .carousel-inner img {
         height: 400px;
     }
-    /* align features content */
-    .features img,p,h3{
-        margin-left: 0!important;
-    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -61,9 +67,5 @@ footer {
     /* Set height of carousel images for large devices */
     .carousel-inner img {
         height: 600px;
-    }
-    /* align features content */
-    .features img,p,h3{
-        margin-left: 15px!important;
     }
 }
